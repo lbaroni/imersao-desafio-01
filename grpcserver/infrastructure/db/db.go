@@ -10,7 +10,7 @@ import (
 	"github.com/joho/godotenv"
 	_ "gorm.io/driver/sqlite"
 	
-	"github.com/lbaroni/imersao-desafio-01/domain/model"
+	"github.com/lbaroni/imersao-desafio-01/grpcserver/domain/model"
 )
 
 func init() {

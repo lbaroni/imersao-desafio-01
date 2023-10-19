@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/jinzhu/gorm"
-	"github.com/lbaroni/imersao-desafio-01/application/grpc"
-	"github.com/lbaroni/imersao-desafio-01/infrastructure/db"
+	"github.com/lbaroni/imersao-desafio-01/grpcserver/application/grpc"
+	"github.com/lbaroni/imersao-desafio-01/grpcserver/infrastructure/db"
 )
 
 var database *gorm.DB

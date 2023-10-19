@@ -1,4 +1,4 @@
-module github.com/lbaroni/imersao-desafio-01
+module github.com/lbaroni/imersao-desafio-01/grpcserver
 
 go 1.21.3
 

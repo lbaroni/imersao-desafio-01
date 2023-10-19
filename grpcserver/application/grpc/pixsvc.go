@@ -3,8 +3,8 @@ package grpc
 import (
 	"context"
 
-	"github.com/lbaroni/imersao-desafio-01/application/grpc/pb"
-	"github.com/lbaroni/imersao-desafio-01/application/usecase"
+	"github.com/lbaroni/imersao-desafio-01/grpcserver/application/grpc/pb"
+	"github.com/lbaroni/imersao-desafio-01/grpcserver/application/usecase"
 )
 
 type ProductGrpcService struct {

@@ -3,7 +3,7 @@ package repository
 import (
 	"fmt"
 
-	"github.com/lbaroni/imersao-desafio-01/domain/model"
+	"github.com/lbaroni/imersao-desafio-01/grpcserver/domain/model"
 	"github.com/jinzhu/gorm"
 )
 

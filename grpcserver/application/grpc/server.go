@@ -6,9 +6,9 @@ import (
 	"net"
 
 	"github.com/jinzhu/gorm"
-	"github.com/lbaroni/imersao-desafio-01/application/grpc/pb"
-	"github.com/lbaroni/imersao-desafio-01/application/usecase"
-	"github.com/lbaroni/imersao-desafio-01/infrastructure/repository"
+	"github.com/lbaroni/imersao-desafio-01/grpcserver/application/grpc/pb"
+	"github.com/lbaroni/imersao-desafio-01/grpcserver/application/usecase"
+	"github.com/lbaroni/imersao-desafio-01/grpcserver/infrastructure/repository"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )

@@ -2,10 +2,10 @@ version: "3"
 
 services:
   app:
-    build: .
+    build: ./grpcserver
     ports:
     - "50051:50051"
     volumes:
-      - .:/go/src/
+      - ./grpcserver:/go/src/
     extra_hosts:
       - "host.docker.internal:172.17.0.1"
