@@ -16,3 +16,4 @@ Criação de um server gRPC em Golang que realiza as operações abaixo, baseada
 
  ## Considerações de solução
  - Como não houve um requisito específico de persistência, foi Utilizada persistencia apenas na memória, apenas para validação do serviço.
+ - arquivo main.go encontra-se na pasta "cmd"
