@@ -2,6 +2,13 @@ version: "3"
 
 services:
   app:
+    build: ./nestjs-grpc-client
+    ports:
+      - 3000:3000
+    volumes:
+      - ./nestjs-grpc-client:/home/node/app
+  
+  grpc:
     build: ./grpcserver
     ports:
     - "50051:50051"
