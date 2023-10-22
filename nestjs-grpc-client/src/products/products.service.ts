@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 import { Metadata } from '@grpc/grpc-js';
@@ -35,7 +35,7 @@ export class ProductsService {
     transport: Transport.GRPC,
     options: {
       url: 'grpc:50051',
-      package: 'github.com.lbaroni.imersao_desafio_01',
+      package: 'github.com.codeedu.codepix',
       protoPath: [join(__dirname, 'protofiles', 'product.proto' )],
       loader: { keepCase: true },
     },
@@ -53,7 +53,11 @@ export class ProductsService {
   }
 
   findAll() {
-    return lastValueFrom(this.productGrpcClient.findProducts({}));
+    try{
+      return lastValueFrom(this.productGrpcClient.findProducts({}));
+    } catch(e) {
+        throw new HttpException(e, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
   }
 
   // findOne(id: number) {

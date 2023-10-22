@@ -1,9 +1,8 @@
 syntax = "proto3";
 
-package github.com.lbaroni.imersao_desafio_01; //nome do package ajustado devido a erro no protoc por causa do hifen no nome
+package github.com.codeedu.codepix;
 
-//adicionado package devido a erro no protoc
-option go_package = "github.com.lbaroni.imersao_desafio_01/application/grpc/protofiles;pb"; 
+option go_package = "/protofiles;pb"; 
 
 service ProductService {
     rpc CreateProduct (CreateProductRequest) returns (CreateProductResponse) {};
